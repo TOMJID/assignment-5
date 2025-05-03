@@ -5,3 +5,6 @@
   --color-white: #f8f8f8;
   --color-accent: hsl(188, 68%, 9%);
 }
+.container {
+  transition: all 0.3s ease-in-out;
+}
