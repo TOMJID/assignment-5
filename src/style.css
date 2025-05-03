@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  /* to overright white color */
+  --color-white: #f8f8f8;
+}
