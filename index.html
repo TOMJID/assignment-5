@@ -11,21 +11,21 @@
     />
     <title>Vite App</title>
   </head>
-  <body class="bg-white">
-    <nav class="text-accent">
+  <body class="font-jakarta text-main bg-white">
+    <nav >
       <div
         class="container mx-auto mt-2 flex items-center justify-between px-4 py-4"
       >
-        <a href="index.html"><img src="public/logo.png" alt="logo" /></a>
+        <a href="index.html"><img src="/logo.png" alt="logo" /></a>
         <div class="hidden space-x-6 text-xl font-medium lg:flex">
           <a href="#" class="">Home</a>
           <a href="#" class="">About Us</a>
-          <a href="#" class="text-red-500">UpSkill</a>
+          <a href="#" class="text-secondary">UpSkill</a>
           <a href="#" class="">Contact Us</a>
         </div>
         <div class="hidden items-center space-x-4 lg:flex">
           <a
-            class="rounded-lg bg-orange-500 px-4 py-3 text-lg font-medium"
+            class="rounded-lg bg-secondary px-4 py-3 text-lg font-medium"
             href="#"
             >Register Interest
           </a>
@@ -46,7 +46,7 @@
         <a href="#" class="block py-4">About Us</a>
         <a href="#" class="block py-4">UpSkill</a>
         <a href="#" class="block py-4">Contact Us</a>
-        <a class="rounded-lg bg-orange-500 px-4 py-3 text-lg" href="#"
+        <a class="rounded-lg bg-secondary px-4 py-3 text-lg" href="#"
           >Register Interest
         </a>
       </div>
@@ -54,9 +54,70 @@
 
     <main>
       <section id="hero">
-        <div class="container mx-auto px-4"></div>
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="flex flex-col items-start justify-center mb-8">
+              <p class="mt-24 mb-4 text-xl font-medium lg:mt-16">
+                Discover<span
+                  class="px-0.5 text-2xl font-extrabold text-red-700"
+                  >-</span
+                >Interact
+                <span class="px-0.5 text-2xl font-extrabold text-red-700"
+                  >-</span
+                >Engage
+              </p>
+              <h1 class="text-7xl font-bold">Google</h1>
+              <h1 class="py-4 text-7xl font-bold text-secondary underline">
+                It Support
+              </h1>
+              <h1 class="mb-8 text-7xl font-bold">Certificate</h1>
+
+              <p class="my-8 text-lg">
+                This is your path to a career in IT. In this program, you'll
+                learn in-demand skills with no degree or experience required
+              </p>
+
+              <div class="flex flex-wrap items-center justify-around">
+                <div class="px-4 py-2 text-center text-xl">
+                  <p class="text-accent font-extrabold">438</p>
+                  <p>Videos</p>
+                </div>
+                <div class="px-4 py-2 text-center text-xl">
+                  <p class="text-accent font-extrabold">151</p>
+                  <p>Reading</p>
+                </div>
+                <div class="px-4 py-2 text-center text-xl">
+                  <p class="text-accent font-extrabold">108</p>
+                  <p>Quizzes</p>
+                </div>
+                <div class="px-4 py-2 text-center text-xl">
+                  <p class="text-accent font-extrabold">24</p>
+                  <p>Exercises</p>
+                </div>
+                <div class="px-4 py-2 text-center text-xl">
+                  <p class="text-accent font-extrabold">4</p>
+                  <p>Assignment</p>
+                </div>
+              </div>
+              <div class="mt-8 flex items-center space-x-4">
+                <a
+                  class="rounded-lg text-white bg-secondary px-6 py-3 text-lg "
+                  href="#"
+                  >Sign Up</a
+                >
+                <a
+                  class="rounded-lg  border-1 border-gray-200 px-6 py-3 text-lg "
+                  href="#"
+                  >Learn More</a
+                >
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <img class="p-4 " src="/hero.png" alt="" />
+          </div>
+        </div>
       </section>
     </main>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

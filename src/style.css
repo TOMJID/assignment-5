@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 
 @theme {
   /* to overright white color */
-  --color-white: #f8f8f8;
-  --color-accent: hsl(188, 68%, 9%);
+  --color-white: hsl(0, 0%, 98%);
+
+  --color-main: hsl(188, 68%, 9%);
+  --color-secondary: hsl(4, 90%, 58%);
+  --color-accent: hsl(151, 100%, 50%);
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 .container {
   transition: all 0.3s ease-in-out;
