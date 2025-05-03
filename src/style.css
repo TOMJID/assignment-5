@@ -3,4 +3,5 @@
 @theme {
   /* to overright white color */
   --color-white: #f8f8f8;
+  --color-accent: hsl(188, 68%, 9%);
 }
