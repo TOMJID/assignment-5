@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,8 +11,8 @@
     />
     <title>Vite App</title>
   </head>
-  <body class="font-jakarta text-main dark:bg-main dark:text-white bg-white">
-    <nav >
+  <body class="font-jakarta text-main dark:bg-main bg-white dark:text-white">
+    <nav>
       <div
         class="container mx-auto mt-2 flex items-center justify-between px-4 py-4"
       >
@@ -25,21 +25,21 @@
         </div>
         <div class="hidden items-center space-x-4 lg:flex">
           <a
-            class="rounded-lg bg-secondary px-4 py-3 text-lg font-medium"
+            class="bg-secondary rounded-lg px-4 py-3 text-lg font-medium"
             href="#"
             >Register Interest
           </a>
           <button id="theme__switch">
-            <i  class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
+            <i class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
           </button>
         </div>
         <div class="lg:hidden">
           <button id="menu-toggle" class="text-3xl">
-            <i  class="bx bx-menu cursor-pointer "></i>
+            <i class="bx bx-menu cursor-pointer"></i>
           </button>
 
           <button id="theme__switch">
-            <i  class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
+            <i class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
           </button>
         </div>
       </div>
@@ -48,13 +48,13 @@
 
       <div
         id="mobile-menu"
-        class=" hidden -translate-y-full transform text-center text-xl font-medium transition-all duration-[600] lg:hidden"
+        class="hidden -translate-y-full transform text-center text-xl font-medium transition-all duration-[600] lg:hidden"
       >
         <a href="#" class="block py-4">Home</a>
         <a href="#" class="block py-4">About Us</a>
         <a href="#" class="block py-4">UpSkill</a>
         <a href="#" class="block py-4">Contact Us</a>
-        <a class="rounded-lg bg-secondary px-4 py-3 text-lg" href="#"
+        <a class="bg-secondary rounded-lg px-4 py-3 text-lg" href="#"
           >Register Interest
         </a>
       </div>
@@ -63,8 +63,8 @@
     <main>
       <section id="hero">
         <div class="container mx-auto px-4">
-          <div class="grid lg:grid-cols-2 grid-cols-1">
-            <div class="flex flex-col items-start justify-center mb-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="mb-8 flex flex-col items-start justify-center">
               <p class="mt-24 mb-4 text-xl font-medium lg:mt-16">
                 Discover<span
                   class="px-0.5 text-2xl font-extrabold text-red-700"
@@ -75,16 +75,14 @@
                 >Engage
               </p>
               <h1 class="text-7xl font-bold">Google</h1>
-              <h1 class="py-4 text-7xl font-bold text-secondary underline">
+              <h1 class="text-secondary py-4 text-7xl font-bold underline">
                 It Support
               </h1>
               <h1 class="mb-8 text-7xl font-bold">Certificate</h1>
-
               <p class="my-8 text-lg">
                 This is your path to a career in IT. In this program, you'll
                 learn in-demand skills with no degree or experience required
               </p>
-
               <div class="flex flex-wrap items-center justify-around">
                 <div class="px-4 py-2 text-center text-xl">
                   <p class="text-accent font-extrabold">438</p>
@@ -109,19 +107,41 @@
               </div>
               <div class="mt-8 flex items-center space-x-4">
                 <a
-                  class="rounded-lg text-white bg-secondary px-6 py-3 text-lg "
+                  class="bg-secondary rounded-lg px-6 py-3 text-lg text-white"
                   href="#"
                   >Sign Up</a
                 >
                 <a
-                  class="rounded-lg  border-1 border-gray-200 px-6 py-3 text-lg "
+                  class="rounded-lg border-1 border-gray-200 px-6 py-3 text-lg"
                   href="#"
                   >Learn More</a
                 >
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <img class="p-4" src="/hero.png" alt="" />
             </div>
           </div>
-          <div class="flex items-center justify-center">
-            <img class="p-4 " src="/hero.png" alt="" />
+        </div>
+      </section>
+
+      <section id="company">
+        <div class="container mx-auto px-4">
+          <div class="my-12 flex flex-wrap items-center justify-between">
+            <h2 class="w-64">
+              Pave your path to career success by gaining a professional Google
+              certificate with the support of C4U
+            </h2>
+            <img src="/hr.png" />
+            <img class="" src="/company-1.png" alt="logo of google" />
+            <img class="hidden md:block" src="/hr.png" />
+            <img
+              class=""
+              src="/company-2.png"
+              alt="department of work & pensions"
+            />
+            <img class="md:hidden lg:block" src="/hr.png" />
+            <img class="" src="/company-3.png" alt="logo of creative for you" />
           </div>
         </div>
       </section>
