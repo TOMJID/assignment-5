@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,7 +11,7 @@
     />
     <title>Vite App</title>
   </head>
-  <body class="font-jakarta text-main bg-white">
+  <body class="font-jakarta text-main dark:bg-main dark:text-white bg-white">
     <nav >
       <div
         class="container mx-auto mt-2 flex items-center justify-between px-4 py-4"
@@ -29,18 +29,26 @@
             href="#"
             >Register Interest
           </a>
-          <i class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
+          <button id="theme__switch">
+            <i  class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
+          </button>
         </div>
-        <button id="menu-toggle" class="text-3xl lg:hidden">
-          <i class="bx bx-menu cursor-pointer"></i>
-        </button>
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-3xl">
+            <i  class="bx bx-menu cursor-pointer "></i>
+          </button>
+
+          <button id="theme__switch">
+            <i  class="bx bx-moon bx-rotate-50 cursor-pointer text-3xl"></i>
+          </button>
+        </div>
       </div>
 
       <!-- mobile nav -->
 
       <div
         id="mobile-menu"
-        class="bg-main hidden -translate-y-full transform text-center text-xl font-medium transition-all duration-[600] lg:hidden"
+        class=" hidden -translate-y-full transform text-center text-xl font-medium transition-all duration-[600] lg:hidden"
       >
         <a href="#" class="block py-4">Home</a>
         <a href="#" class="block py-4">About Us</a>

@@ -1,5 +1,18 @@
 import "./style.css";
 
+// Theme toggle
+const html = document.querySelector("html");
+const themeToggle = document.querySelectorAll("#theme__switch");
+// This code toggles the dark mode class on the html element when the theme toggle button is clicked
+themeToggle.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+  });
+});
+
+// mobile navigation
+// This code toggles the mobile menu when the menu button is clicked
+
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
