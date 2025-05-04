@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Vite App</title>
   </head>
-  <body class="font-jakarta text-main dark:bg-main bg-white dark:text-white">
-    <nav>
+  <body
+    class="font-jakarta text-main dark:bg-main relative bg-white dark:text-white"
+  >
+    <nav class="dark:bg-main fixed top-0 z-50 w-full shadow backdrop-blur-lg">
       <div
         class="container mx-auto mt-2 flex items-center justify-between px-4 py-4"
       >
@@ -49,7 +51,7 @@
 
       <div
         id="mobile-menu"
-        class="hidden -translate-y-full transform text-center text-xl font-medium transition-all duration-[600] lg:hidden"
+        class="hidden -translate-y-full transform pb-8 text-center text-xl font-medium transition-all duration-[600] lg:hidden"
       >
         <a href="#" class="block py-4">Home</a>
         <a href="#" class="block py-4">About Us</a>
@@ -355,7 +357,7 @@
               class="h-98 rounded-lg bg-gray-100 px-6 py-8 shadow-2xl dark:shadow-gray-500"
             >
               <img
-                class="mx-auto h-auto rounded-lg object-cover"
+                class="mx-auto h-full rounded-lg object-contain"
                 src="/certificate.png"
                 alt="certificate"
               />
@@ -366,15 +368,16 @@
 
       <section id="course">
         <div class="container mx-auto my-16 px-4">
-          <div class="relative grid h-32 grid-cols-12 ">
-            <div class="col-span-9 ">
-              <h4 class="text-4xl font-semibold mt-12">
-                There are 5 Courses in this <br />
-                Professional Certificate
+          <div class="relative grid h-32 grid-cols-12">
+            <div class="col-span-9">
+              <h4 class="mt-12 w-98 text-4xl font-semibold">
+                There are 5 Courses in this Professional Certificate
               </h4>
-              <div class="flex flex-wrap items-center justify-around gap-4 mt-8">
+              <div
+                class="mt-8 flex flex-wrap items-center justify-around gap-4"
+              >
                 <a
-                  class="bg-accent dark:bg-white dark:text-black rounded-2xl border px-5 py-1 uppercase"
+                  class="bg-accent rounded-2xl border px-5 py-1 uppercase dark:bg-white dark:text-black"
                   href="#"
                   >Course 1</a
                 ><a class="rounded-2xl border px-5 py-1 uppercase" href="#"
@@ -384,15 +387,39 @@
                 ><a class="rounded-2xl border px-5 py-1 uppercase" href="#"
                   >Course 4</a
                 ><a class="rounded-2xl border px-5 py-1 uppercase" href="#"
-                  >Course 5</a
-                >
+                  >Course 5
+                </a>
               </div>
             </div>
             <img
-              class="absolute -bottom-50 -right-25 scale-60"
+              class="absolute -right-25 -bottom-70 scale-50 md:-right-20 md:-bottom-50 md:scale-60 xl:scale-70 xl:-right-8"
               src="/course.png"
               alt="course pin"
             />
+          </div>
+        </div>
+      </section>
+
+      <section id="details">
+        <div class="container mx-auto mt-64 px-4">
+          <div class="flex flex-col items-center justify-center">
+            <div class="relative mb-32 md:mb-74 lg:mb-98 xl:mb-105">
+              <img class="" src="/details-1.png" alt="course 1 details" />
+              <img
+                class="absolute right-0 -bottom-25 mx-2 rotate-5 px-4 md:-bottom-55 md:rotate-15 lg:-bottom-70 xl:-bottom-75 2xl:left-25"
+                src="/vector-1.svg"
+              />
+            </div>
+            <img src="/details-2.png" alt="course 2 details" />
+            <img
+              class="relative left-0 -mt-1 px-4 xl:mx-auto"
+              src="/vector-2.svg"
+            />
+            <img src="/details-3.png" alt="course 3 details" />
+            <img class="-mt-1 px-4 xl:mx-auto" src="/vector-3.svg" />
+            <img src="/details-4.png" alt="course 4 details" />
+            <img class="-mt-1 px-4 xl:mx-auto" src="/vector-4.svg" />
+            <img src="/details-5.png" alt="course 5 details" />
           </div>
         </div>
       </section>
