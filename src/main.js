@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 
 // Theme toggle
 const html = document.querySelector("html");
