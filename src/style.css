@@ -16,3 +16,11 @@
 .container {
   transition: all 0.3s ease-in-out;
 }
+
+#banner {
+  background-image: url(/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 555px; */
+}

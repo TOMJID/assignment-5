@@ -1,5 +1,3 @@
-// import "./style.css";
-
 // Theme toggle
 const html = document.querySelector("html");
 const themeToggle = document.querySelectorAll("#theme__switch");
@@ -11,8 +9,6 @@ themeToggle.forEach((toggle) => {
 });
 
 // mobile navigation
-// This code toggles the mobile menu when the menu button is clicked
-
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
