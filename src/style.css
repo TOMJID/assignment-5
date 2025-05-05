@@ -4,7 +4,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* to overright white color */
   --color-white: hsl(0, 0%, 98%);
 
   --color-main: hsl(188, 68%, 9%);
@@ -13,7 +12,25 @@
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 1px 0 4px var(--color-accent);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 0.1rem;
+}
 .container {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -21,6 +38,8 @@
   background-image: url(/banner.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  /* height: 555px; */
 }
